@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">android_function</string>
     <string name="splash_content">This is Splash Screen</string>
+    <string name="access_button">Get Access Right</string>
 </resources>
