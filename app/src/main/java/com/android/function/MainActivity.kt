@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.android.function.accessRight.AccessRightActivity
+import com.android.function.getLocation.LocationActivity
 import com.android.function.mvvm.MvvmActivity
 import com.android.function.splash.SplashActivity
 
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var go_mvvm:Button? = null
     var go_splash:Button? = null
     var go_access_right:Button? = null
+    var go_location:Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +31,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         go_access_right = findViewById(R.id.go_access_right)
         go_access_right!!.setOnClickListener(this)
 
+        go_location = findViewById(R.id.go_location)
+        go_location!!.setOnClickListener(this)
+
     }
 
         override fun onClick(v: View?) {
@@ -41,6 +46,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.go_access_right -> {   // access 확인
                     goActivity(AccessRightActivity())
+                }
+                R.id.go_location -> {
+                    goActivity(LocationActivity())
                 }
 
             }
