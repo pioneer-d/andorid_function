@@ -14,6 +14,10 @@ import android.widget.Toast
 import com.android.function.R
 
 class LocationActivity : AppCompatActivity() {
+//<uses-permission android:name="android.permission.INTERNET" />
+//<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+//<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     var txt_latitude : TextView? = null
     var txt_longitude : TextView? = null

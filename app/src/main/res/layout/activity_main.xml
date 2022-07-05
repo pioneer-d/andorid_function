@@ -48,6 +48,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Location" />
+
+        <Button
+            android:id="@+id/go_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Network" />
     </LinearLayout>
 
 

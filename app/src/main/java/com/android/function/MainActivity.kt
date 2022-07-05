@@ -9,6 +9,7 @@ import android.widget.Button
 import com.android.function.accessRight.AccessRightActivity
 import com.android.function.getLocation.LocationActivity
 import com.android.function.mvvm.MvvmActivity
+import com.android.function.network.NetworkConfirm
 import com.android.function.splash.SplashActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var go_splash:Button? = null
     var go_access_right:Button? = null
     var go_location:Button? = null
+    var go_network:Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +36,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         go_location = findViewById(R.id.go_location)
         go_location!!.setOnClickListener(this)
 
+        go_network = findViewById(R.id.go_network)
+        go_network!!.setOnClickListener(this)
+
     }
 
         override fun onClick(v: View?) {
@@ -49,6 +54,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.go_location -> {
                     goActivity(LocationActivity())
+                }
+                R.id.go_network -> {
+                    goActivity(NetworkConfirm())
                 }
 
             }
