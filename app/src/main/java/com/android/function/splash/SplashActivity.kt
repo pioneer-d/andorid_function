@@ -12,7 +12,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        val delayTime:Long = 3000
+        val delayTime:Long = 2000
 
         Handler().postDelayed({
             val intent = Intent(this,MainActivity::class.java)
