@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.android.function.accessRight.AccessRightActivity
+import com.android.function.dialog_cardView.Dialog_CardView
 import com.android.function.getLocation.LocationActivity
 import com.android.function.mvvm.MvvmActivity
 import com.android.function.network.NetworkConfirm
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var go_access_right:Button? = null
     var go_location:Button? = null
     var go_network:Button? = null
+    var go_dialog:Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +41,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         go_network = findViewById(R.id.go_network)
         go_network!!.setOnClickListener(this)
 
+        go_dialog = findViewById(R.id.go_dialog)
+        go_dialog!!.setOnClickListener(this)
+
     }
 
         override fun onClick(v: View?) {
@@ -52,11 +57,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.go_access_right -> {   // access 확인
                     goActivity(AccessRightActivity())
                 }
-                R.id.go_location -> {
+                R.id.go_location -> {   // 위치 정보 get
                     goActivity(LocationActivity())
                 }
-                R.id.go_network -> {
+                R.id.go_network -> {    // 네트워크 상태 확인
                     goActivity(NetworkConfirm())
+                }
+                R.id.go_dialog -> {     // Dialog 출력
+                    goActivity(Dialog_CardView())
                 }
 
             }

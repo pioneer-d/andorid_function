@@ -37,6 +37,7 @@
         </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/second_linear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/first_linear"
@@ -55,6 +56,24 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Network" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/second_linear"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <Button
+            android:id="@+id/go_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Dialog" />
+
+
     </LinearLayout>
 
 
