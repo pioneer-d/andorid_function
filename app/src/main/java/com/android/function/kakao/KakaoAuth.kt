@@ -67,7 +67,7 @@ class KakaoAuth : AppCompatActivity() {
             if (error != null) {
                 Log.d("진행 확인","카카오계정으로 로그인 실패 : ${error}")
                 TextMsg(this,"카카오계정으로 로그인 실패 : ${error}")
-                setLogin(false)
+                //setLogin(false)
             } else if (token != null) {
                 //TODO: 최종적으로 카카오로그인 및 유저정보 가져온 결과
                 UserApiClient.instance.me { user, error ->
@@ -89,7 +89,7 @@ class KakaoAuth : AppCompatActivity() {
                             kakao_imageUrl!!
                         )
 
-                    setLogin(true)
+                    //setLogin(true)
                 }
             }
         }
@@ -112,7 +112,7 @@ class KakaoAuth : AppCompatActivity() {
                 } else if (token != null) {
                     Log.d("진행 확인", "카카오톡으로 로그인 성공 ${token.accessToken}")
                     TextMsg(this,"카카오톡으로 로그인 성공 ${token.accessToken}")
-                    setLogin(true)
+                    //setLogin(true)
                 }
             }
         } else {
@@ -128,7 +128,7 @@ class KakaoAuth : AppCompatActivity() {
             }
             else {
                 TextMsg(this, "로그아웃 성공. SDK에서 토큰 삭제됨")
-                setLogin(false)
+                //setLogin(false)
             }
         }
     }
@@ -141,7 +141,7 @@ class KakaoAuth : AppCompatActivity() {
             }
             else {
                 TextMsg(this, "연결 끊기 성공. SDK에서 토큰 삭제 됨")
-                setLogin(false)
+                //setLogin(false)
             }
         }
     }
@@ -150,12 +150,12 @@ class KakaoAuth : AppCompatActivity() {
         tv_hashKey!!.text = msg
     }
 
-    private fun setLogin(bool: Boolean){
-        Log.d("진행 확인","setLogin()")
-        btn_start_kakao_login!!.visibility = if(bool) View.GONE else View.VISIBLE
-        btn_start_kakao_login!!.visibility = if(bool) View.VISIBLE else View.GONE
-        btn_start_kakao_login!!.visibility = if(bool) View.VISIBLE else View.GONE
-    }
+//    private fun setLogin(bool: Boolean){
+//        Log.d("진행 확인","setLogin()")
+//        btn_start_kakao_login!!.visibility = if(bool) View.GONE else View.VISIBLE
+//        btn_start_kakao_login!!.visibility = if(bool) View.VISIBLE else View.GONE
+//        btn_start_kakao_login!!.visibility = if(bool) View.VISIBLE else View.GONE
+//    }
 
 
 
