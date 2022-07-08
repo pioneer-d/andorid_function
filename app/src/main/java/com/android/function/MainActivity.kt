@@ -4,14 +4,18 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import com.android.function.accessRight.AccessRightActivity
 import com.android.function.dialog_cardView.Dialog_CardView
 import com.android.function.getLocation.LocationActivity
+import com.android.function.kakao.KakaoAuth
 import com.android.function.mvvm.MvvmActivity
 import com.android.function.network.NetworkConfirm
 import com.android.function.splash.SplashActivity
+import com.kakao.sdk.common.KakaoSdk
+import com.kakao.sdk.common.util.Utility
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -21,6 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var go_location:Button? = null
     var go_network:Button? = null
     var go_dialog:Button? = null
+    var go_kakao:Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +49,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         go_dialog = findViewById(R.id.go_dialog)
         go_dialog!!.setOnClickListener(this)
 
+        go_kakao = findViewById(R.id.go_kakao)
+        go_kakao!!.setOnClickListener(this)
+        KakaoSdk.init(this,"9d372aeedfd14c280bd3a506c7c88302")
+
+
+
+//        var keyHash = Utility.getKeyHash(this)
+//        Log.d("Kakao Hash Key : ","$keyHash")
+
     }
 
         override fun onClick(v: View?) {
@@ -65,6 +79,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.go_dialog -> {     // Dialog 출력
                     goActivity(Dialog_CardView())
+                }
+                R.id.go_kakao -> {      // Kakao 로그인 Api
+                    goActivity(KakaoAuth())
                 }
 
             }

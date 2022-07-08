@@ -29,7 +29,7 @@ class Dialog_CardView : AppCompatActivity() {
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_cardview)
         dialog.setCancelable(false) // 취소 버튼으로 dialog 삭제 불가
-        dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))     // 모서리, 꼭짓점 주변과 맞추기.
+        dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))     // 모서리, 꼭짓점 주변과 색상 맞추기.
 
         dialog.show()   // dialog 실행
 
