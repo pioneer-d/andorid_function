@@ -13,6 +13,7 @@ import com.android.function.getLocation.LocationActivity
 import com.android.function.kakao.KakaoAuth
 import com.android.function.mvvm.MvvmActivity
 import com.android.function.network.NetworkConfirm
+import com.android.function.recyclerview_api.MainActivity
 import com.android.function.splash.SplashActivity
 import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.util.Utility
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var go_network:Button? = null
     var go_dialog:Button? = null
     var go_kakao:Button? = null
+    var go_Recycler:Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +54,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         go_kakao = findViewById(R.id.go_kakao)
         go_kakao!!.setOnClickListener(this)
         KakaoSdk.init(this,"9d372aeedfd14c280bd3a506c7c88302")
+
+        go_Recycler = findViewById(R.id.go_Recycler)
+        go_Recycler!!.setOnClickListener(this)
 
 
 
@@ -82,6 +87,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.go_kakao -> {      // Kakao 로그인 Api
                     goActivity(KakaoAuth())
+                }
+                R.id.go_Recycler -> {   // RecyclerView 구현
+                    goActivity(MainActivity())
                 }
 
             }

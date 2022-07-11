@@ -80,6 +80,13 @@
             android:layout_marginLeft="10dp"
             android:text="Kakao" />
 
+        <Button
+            android:id="@+id/go_Recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Recycler" />
+
 
     </LinearLayout>
 
