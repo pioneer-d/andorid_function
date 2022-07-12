@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import com.android.function.accessRight.AccessRightActivity
+import com.android.function.barcode.MainActivity3
 import com.android.function.dialog_cardView.Dialog_CardView
 import com.android.function.getLocation.LocationActivity
 import com.android.function.kakao.KakaoAuth
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var go_dialog:Button? = null
     var go_kakao:Button? = null
     var go_Recycler:Button? = null
+    var go_barcode:Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +59,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         go_Recycler = findViewById(R.id.go_Recycler)
         go_Recycler!!.setOnClickListener(this)
+
+        go_barcode = findViewById(R.id.go_barcode)
+        go_barcode!!.setOnClickListener(this)
 
 
 
@@ -90,6 +95,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.go_Recycler -> {   // RecyclerView 구현
                     goActivity(MainActivity())
+                }
+                R.id.go_barcode -> {
+                    goActivity(MainActivity3())
                 }
 
             }

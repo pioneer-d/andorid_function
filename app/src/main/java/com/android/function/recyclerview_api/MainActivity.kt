@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful){
                     var data: Get? = response.body()
                     Log.d("API Test, Size : ",data!!.getData().size.toString())
-                    for (i in 0..data!!.getData().size.toString()-1){
+                    for (i in 0..data.getData().size-1){
                         Log.e("@@@@",i.toString())
 
                         image = data.getData().get(i).getProject().getBannerImage().toString()

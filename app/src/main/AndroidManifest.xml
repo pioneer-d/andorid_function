@@ -16,13 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_function"
-        android:usesCleartextTraffic="true">
-        <!-- android:usesCleartextTraffic="true" -> API 연결할 때 필요 -->
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name=".barcode.MainActivity3"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".recyclerview_api.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".recyclerview_api.RecyclerViewActivity"
             android:exported="false" />
         <activity
             android:name=".kakao.KakaoAuth"
