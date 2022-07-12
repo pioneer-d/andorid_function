@@ -15,7 +15,7 @@ class ProfileAdapter (private val context : Context) : RecyclerView.Adapter<Prof
         }
     }
 
-    var data = listOf<ProfileData>()
+    var data = ArrayList<ProfileData>()
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int

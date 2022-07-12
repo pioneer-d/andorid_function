@@ -62,4 +62,7 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.9.0' // Url -> ImageView
 
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'      //Retrofit - default (retrofit 라이브러리)
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0' //Retrofit - gson (json 형식으로 받아올 데이터 객체로 변환)
+
 }
