@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -11,6 +12,7 @@ import com.android.function.accessRight.AccessRightActivity
 import com.android.function.barcode.MainActivity3
 import com.android.function.dialog_cardView.Dialog_CardView
 import com.android.function.getLocation.LocationActivity
+import com.android.function.iamport.IamportActivity
 import com.android.function.kakao.KakaoAuth
 import com.android.function.mvvm.MvvmActivity
 import com.android.function.network.NetworkConfirm
@@ -30,6 +32,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var go_kakao:Button? = null
     var go_Recycler:Button? = null
     var go_barcode:Button? = null
+    var go_iamport:Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,10 +66,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         go_barcode = findViewById(R.id.go_barcode)
         go_barcode!!.setOnClickListener(this)
 
+        go_iamport = findViewById(R.id.go_iamport)
+        go_iamport!!.setOnClickListener(this)
 
-
-//        var keyHash = Utility.getKeyHash(this)
-//        Log.d("Kakao Hash Key : ","$keyHash")
 
     }
 
@@ -98,6 +100,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 R.id.go_barcode -> {
                     goActivity(MainActivity3())
+                }
+                R.id.go_iamport -> {
+                    goActivity(IamportActivity())
                 }
 
             }
