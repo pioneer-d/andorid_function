@@ -13,4 +13,5 @@
 .externalNativeBuild
 .cxx
 /app/src/main/res/values/kakao_app_key.xml
+/app/src/main/res/values/iamport_api_key.xml
 local.properties

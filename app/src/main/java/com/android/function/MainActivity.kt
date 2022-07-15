@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         go_kakao = findViewById(R.id.go_kakao)
         go_kakao!!.setOnClickListener(this)
-        KakaoSdk.init(this,"9d372aeedfd14c280bd3a506c7c88302")
+        KakaoSdk.init(this,applicationContext.getString(R.string.kakao_app_key))
 
         go_Recycler = findViewById(R.id.go_Recycler)
         go_Recycler!!.setOnClickListener(this)

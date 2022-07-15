@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pg_spinner">
+        <item>차이 간편결재</item>
+        <item>NHN KCP</item>
+        <item>이니시스웹표준</item>
+        <item>NHN KCP 정기결제</item>
+        <item>토스페이먼츠 - (구)LG유플러스</item>
+        <item>JTNet</item>
+        <item>카카오페이</item>
+        <item>나이스페이</item>
+        <item>다날휴대폰소액결제</item>
+        <item>다날일반결제</item>
+        <item>한국정보통신</item>
+        <item>페이팔</item>
+        <item>모빌리언스 휴대폰소액결제</item>
+        <item>페이코</item>
+        <item>엑심베이</item>
+        <item>세틀뱅크</item>
+        <item>세틀뱅크_펌</item>
+        <item>네이버페이-결제형</item>
+        <item>스마일페이</item>
+        <item>페이플</item>
+        <item>알리페이</item>
+        <item>bluewalnut</item>
+        <item>간편결제 - 토스</item>
+        <item>스마트로</item>
+    </string-array>
+
+    <string-array name="payment_method_spinner">
+        <item>신용카드</item>
+        <item>실시간계좌이체</item>
+        <item>가상계좌</item>
+        <item>휴대폰소액결제</item>
+        <item>삼성페이 / 이니시스, KCP 전용</item>
+        <item>KPay앱 직접호출 / 이니시스 전용</item>
+        <item>카카오페이 직접호출 / 이니시스, KCP, 나이스페이먼츠 전용</item>
+        <item>페이코 직접호출 / 이니시스, KCP 전용</item>
+        <item>LPAY 직접호출 / 이니시스 전용</item>
+        <item>SSG페이 직접호출 / 이니시스 전용</item>
+        <item>토스간편결제 직접호출 / 이니시스 전용</item>
+        <item>문화상품권 / 이니시스, LGU+, KCP 전용</item>
+        <item>스마트문상 / 이니시스, LGU+, KCP 전용</item>
+        <item>해피머니 / 이니시스, KCP 전용</item>
+        <item>도서문화상품권 / LGU+, KCP 전용</item>
+        <item>베네피아 포인트 등 포인트 결제 / KCP 전용</item>
+        <item>유니온페이</item>
+        <item>알리페이</item>
+        <item>텐페이</item>
+        <item>위챗페이</item>
+        <item>몰페이</item>
+        <item>태국 paysbuy</item>
+        <item>네이버페이</item>
+    </string-array>
+
+
+</resources>
