@@ -150,15 +150,15 @@ class IamportActivity : AppCompatActivity() {
     }
 
     fun payment(request: IamPortRequest) {  // 가맹점 식별코드 입력해야함.
-        Iamport.payment(applicationContext.getString(R.string.iamport_user_code), null, null, request,
-            approveCallback = {
-                /* (Optional) CHAI 최종 결제전 콜백 함수. */
-                Log.e(thisName, "CHAI 최종 결제전 콜백 함수")
-            },
-            paymentResultCallback = {
-                /* 최종 결제결과 콜백 함수. */
-                Log.e(thisName, "최종 결제결과 콜백 함수")
-            })
+//        Iamport.payment(applicationContext.getString(R.string.iamport_user_code), null, null, request,
+//            approveCallback = {
+//                /* (Optional) CHAI 최종 결제전 콜백 함수. */
+//                Log.e(thisName, "CHAI 최종 결제전 콜백 함수")
+//            },
+//            paymentResultCallback = {
+//                /* 최종 결제결과 콜백 함수. */
+//                Log.e(thisName, "최종 결제결과 콜백 함수")
+//            })
     }
 
     override fun onPause() {
