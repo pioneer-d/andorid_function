@@ -26,17 +26,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding : ActivityMainBinding
 
-//    var go_mvvm:Button? = null
-//    var go_splash:Button? = null
-//    var go_access_right:Button? = null
-//    var go_location:Button? = null
-//    var go_network:Button? = null
-//    var go_dialog:Button? = null
-//    var go_kakao:Button? = null
-//    var go_Recycler:Button? = null
-//    var go_barcode:Button? = null
-//    var go_iamport:Button? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -52,37 +41,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.goRecycler.setOnClickListener(this)
         binding.goBarcode.setOnClickListener(this)
         binding.goIamport.setOnClickListener(this)
-//        go_mvvm = findViewById(R.id.go_mvvm)
-//        go_mvvm!!.setOnClickListener(this)
-//
-//        go_splash = findViewById(R.id.go_splash)
-//        go_splash!!.setOnClickListener(this)
-//
-//        go_access_right = findViewById(R.id.go_access_right)
-//        go_access_right!!.setOnClickListener(this)
-//
-//        go_location = findViewById(R.id.go_location)
-//        go_location!!.setOnClickListener(this)
-//
-//        go_network = findViewById(R.id.go_network)
-//        go_network!!.setOnClickListener(this)
-//
-//        go_dialog = findViewById(R.id.go_dialog)
-//        go_dialog!!.setOnClickListener(this)
-//
-//        go_kakao = findViewById(R.id.go_kakao)
-//        go_kakao!!.setOnClickListener(this)
-////        KakaoSdk.init(this,applicationContext.getString(R.string.kakao_app_key))
-//
-//        go_Recycler = findViewById(R.id.go_Recycler)
-//        go_Recycler!!.setOnClickListener(this)
-//
-//        go_barcode = findViewById(R.id.go_barcode)
-//        go_barcode!!.setOnClickListener(this)
-//
-//        go_iamport = findViewById(R.id.go_iamport)
-//        go_iamport!!.setOnClickListener(this)
-
 
     }
 
