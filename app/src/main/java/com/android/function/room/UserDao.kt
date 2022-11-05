@@ -4,6 +4,7 @@ import androidx.room.*
 
 @Dao
 interface UserDao {
+// Interface로 작성
 
     @Insert
     fun insert(user: User)
@@ -15,7 +16,6 @@ interface UserDao {
     fun delete(user: User)
 
     // 이외의 메소드가 필요하면 직접 쿼리문 작성하면 됨!
-
     @Query("SELECT * FROM User")
     fun getAll(): List<User>
 

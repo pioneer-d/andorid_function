@@ -5,4 +5,6 @@
     <string name="location_button">Get Location</string>
     <string name="network_button">Confirm Network</string>
     <string name="dialog_button">Alert Dialog</string>
+
+    <string name="china_server">http://106.15.201.243/</string>
 </resources>

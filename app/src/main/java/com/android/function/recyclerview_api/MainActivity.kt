@@ -20,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMain2Binding
-    val BaseUrl = "http://106.15.201.243/"  //중국 api test 용도
+    val BaseUrl = getString(R.string.china_server) //중국 api test 용도
 
     var dataList = ArrayList<ProfileData>()
     val profileAdapter = ProfileAdapter(this)

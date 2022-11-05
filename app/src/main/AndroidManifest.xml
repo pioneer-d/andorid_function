@@ -19,6 +19,9 @@
         android:theme="@style/Theme.Android_function"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".room.RoomActivity"
+            android:exported="false" />
+        <activity
             android:name=".iamport.IamportActivity"
             android:exported="false" />
         <activity
@@ -27,26 +30,23 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".recyclerview_api.MainActivity"
-            android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".kakao.KakaoAuth"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.VIEW" />-->
-
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--                <category android:name="android.intent.category.BROWSABLE" />-->
-
-<!--                &lt;!&ndash; Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" &ndash;&gt;-->
-<!--                &lt;!&ndash; scheme-example: "kakao{NATIVE_APP_KEY}" &ndash;&gt;-->
-<!--                <data-->
-<!--                    android:host="oauth"-->
-<!--                    android:scheme="@string/kakao_app_key_mani" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".kakao.KakaoAuth" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+        <!-- &lt;!&ndash; Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" &ndash;&gt; -->
+        <!-- &lt;!&ndash; scheme-example: "kakao{NATIVE_APP_KEY}" &ndash;&gt; -->
+        <!-- <data -->
+        <!-- android:host="oauth" -->
+        <!-- android:scheme="@string/kakao_app_key_mani" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name=".dialog_cardView.Dialog_CardView"
             android:exported="false" />

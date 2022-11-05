@@ -4,8 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
+// Table Naming Customizing 방법
 // @Entity(tableName="userProfile")
-// 이렇게 명시하지 않으면 클래스 이름이 Table의 이름이 됨.
 data class User(
     // 칼럼들 나열
     var name: String,
