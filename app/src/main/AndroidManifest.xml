@@ -19,7 +19,7 @@
         android:theme="@style/Theme.Android_function"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".mvvmWithRoom.CleanArchitecture"
+            android:name=".mvvmWithRoom.view.CleanArchitecture"
             android:exported="false" />
         <activity
             android:name=".room.RoomActivity"

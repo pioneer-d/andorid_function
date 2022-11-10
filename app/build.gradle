@@ -64,7 +64,7 @@ dependencies {
 // 코틀린을 쓰는 경우
     implementation 'androidx.work:work-runtime-ktx:2.7.1'
 
-    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'       //RecyclerView
 
     implementation "com.kakao.sdk:v2-user:2.11.0"
 

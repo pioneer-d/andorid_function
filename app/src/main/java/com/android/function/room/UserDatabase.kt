@@ -30,6 +30,4 @@ abstract class UserDatabase: RoomDatabase() {
         }
     }
 
-    // 활용해보는 activity 만들어보자.
-    // 이후에 MVVM이랑 엮어서 프로젝트 만들어보자.
 }

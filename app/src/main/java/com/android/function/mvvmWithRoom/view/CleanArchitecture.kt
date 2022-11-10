@@ -1,4 +1,4 @@
-package com.android.function.mvvmWithRoom
+package com.android.function.mvvmWithRoom.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import com.android.function.R
 import com.android.function.databinding.ActivityCleanArchitectureBinding
+import com.android.function.mvvmWithRoom.model.CleanViewModel
 
 class CleanArchitecture : AppCompatActivity() {
 
@@ -16,7 +17,9 @@ class CleanArchitecture : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_clean_architecture)
 
+        // DataBinding 설정
         binding.lifecycleOwner = this
+        // ViewModel 설정
         binding.viewModel = model
     }
 
