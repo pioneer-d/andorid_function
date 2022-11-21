@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import com.android.function.R
 import com.android.function.databinding.ActivityCleanArchitectureBinding
 import com.android.function.mvvmWithRoom.model.CleanViewModel
@@ -21,6 +22,10 @@ class CleanArchitecture : AppCompatActivity() {
         binding.lifecycleOwner = this
         // ViewModel 설정
         binding.viewModel = model
+
+        model._count.observe(this, Observer {
+            binding.observeTx.text = it.toString()
+        })
     }
 
     // Room, RecyclerView 활용해서

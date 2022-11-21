@@ -1,5 +1,7 @@
 package com.android.function.mvvmWithRoom.model.room
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.room.*
 
 @Dao
@@ -23,4 +25,8 @@ interface CleanDao {
 
     @Query("DELETE FROM Profile WHERE id = :id")
     fun deleteProfileById(id: Int)
+
+    @Query("DELETE FROM Profile")
+    fun deleteAll()
+
 }

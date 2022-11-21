@@ -16,6 +16,7 @@ import com.android.function.getLocation.LocationActivity
 import com.android.function.iamport.IamportActivity
 import com.android.function.kakao.KakaoAuth
 import com.android.function.mvvm.MvvmActivity
+import com.android.function.mvvmWithRoom.view.CleanArchitecture
 import com.android.function.network.NetworkConfirm
 import com.android.function.recyclerview_api.MainActivity
 import com.android.function.room.RoomActivity
@@ -43,6 +44,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.goBarcode.setOnClickListener(this)
         binding.goIamport.setOnClickListener(this)
         binding.goRoom.setOnClickListener(this)
+        binding.goClean.setOnClickListener(this)
 
     }
 
@@ -59,6 +61,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.go_barcode -> goActivity(MainActivity3()) // barcode
                 R.id.go_iamport -> goActivity(IamportActivity())   // Iamport
                 R.id.go_room -> goActivity(RoomActivity())
+                R.id.go_clean -> goActivity(CleanArchitecture())    //Clean Architecture
+
 
             }
         }
